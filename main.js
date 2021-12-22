@@ -1,6 +1,11 @@
 /* 
 👉 Write your kata here!
 */
+// You found someone leave you a secret message, 
+// go and decode the message before you are in trouble.
+
+
+
 //const encodedString = "crrng"
 const encodedString = "k co pqy kp nc, eqog cpf hkpf og."
 const decodedString = "i am now in la, come and find me."
