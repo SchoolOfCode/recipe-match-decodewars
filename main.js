@@ -2,7 +2,8 @@
 👉 Write your kata here!
 */
 // You found someone leave you a secret message, 
-// go and decode the message before you are in trouble.
+// go and decode the message before you get into trouble.
+// All the letters are in lowercase.
 
 
 
