@@ -16,26 +16,27 @@ function decoder(encodedString){
         //Convert the alphabet into ASCLL code, save it in alphabetASCLL
         alphabetASCLL = encodedString[i].charCodeAt(0);
 
+        //Check if it is a symbol or space
         if(alphabetASCLL >= 31 && alphabetASCLL <= 64){
             //Convert the ASCLL code back to alphabet, and push it into array
-        newArray.push(String.fromCharCode(alphabetASCLL));
+            newArray.push(String.fromCharCode(alphabetASCLL));
         
         } else {
 
-        //Move 2 alphabet ahead 
-        alphabetASCLL = alphabetASCLL - 2;
-        //a, b will become y, z 
-        if (alphabetASCLL < 97){
-            alphabetASCLL = alphabetASCLL + 26;
-        } 
-        //Just in case it moves 2 alphabet downwards
-        if (alphabetASCLL > 122){
-            alphabetASCLL = alphabetASCLL - 26;
-        }  
-        console.log(alphabetASCLL);
-        
-        //Convert the ASCLL code back to alphabet, and push it into array
-        newArray.push(String.fromCharCode(alphabetASCLL));
+            //Move 2 alphabet ahead 
+            alphabetASCLL = alphabetASCLL - 2;
+            //a, b will become y, z 
+            if (alphabetASCLL < 97){
+                alphabetASCLL = alphabetASCLL + 26;
+            } 
+            //Just in case it moves 2 alphabet downwards
+            if (alphabetASCLL > 122){
+                alphabetASCLL = alphabetASCLL - 26;
+            }  
+            console.log(alphabetASCLL);
+            
+            //Convert the ASCLL code back to alphabet, and push it into array
+            newArray.push(String.fromCharCode(alphabetASCLL));
         }
     }
     //Join the array into a string
