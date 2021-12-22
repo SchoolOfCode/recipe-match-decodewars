@@ -7,17 +7,19 @@ const decodedString = "i am now in la, come and find me."
 
 //actual is crrng, expected is apple. 
 
-function decoder(encodedString){
+export function decoder(encodedString){
     let alphabetASCLL = 0;
     let newArray = [];
     
     //For every alphabet in a word
-    for(i = 0; i < encodedString.length; i++){
+    for(let i = 0; i < encodedString.length; i++){
         //Convert the alphabet into ASCLL code, save it in alphabetASCLL
         alphabetASCLL = encodedString[i].charCodeAt(0);
 
         //Check if it is a symbol or space
-        if(alphabetASCLL >= 31 && alphabetASCLL <= 64){
+        if(alphabetASCLL >= 31 && alphabetASCLL <= 64 ||
+            alphabetASCLL >= 91 && alphabetASCLL <= 96 ||
+            alphabetASCLL >= 123 && alphabetASCLL <= 127){
             //Convert the ASCLL code back to alphabet, and push it into array
             newArray.push(String.fromCharCode(alphabetASCLL));
         
@@ -47,6 +49,6 @@ function decoder(encodedString){
     return text;
 }
 
-decoder(encodedString);
+//decoder(encodedString);
 
 //👉 Write the function your CodeWarriors will start with below here:
