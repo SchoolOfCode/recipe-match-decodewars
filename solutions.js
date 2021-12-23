@@ -53,13 +53,13 @@ export function decoder(encodedString) {
 
             //Move 2 alphabet ahead 
             alphabetASCLL = alphabetASCLL - 2;
-            //y, z will become a, b
-            if (alphabetASCLL > 122) {
-                alphabetASCLL = alphabetASCLL - 26;
-            }
-            //Just in case it is shifting the letters down in alphabet
+            //secret letter a, b  will become y, z
             if (alphabetASCLL < 97) {
                 alphabetASCLL = alphabetASCLL + 26;
+            }
+            //Just in case it is shifting the letters down in alphabet
+            if (alphabetASCLL > 122) {
+                alphabetASCLL = alphabetASCLL - 26;
             }
             console.log(alphabetASCLL);
 
