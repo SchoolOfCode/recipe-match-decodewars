@@ -91,6 +91,20 @@ describe('Decode', () => {
         expect(actual).toStrictEqual(expected);
     })
 
+    test("See if you can decode the secret message 2", () => {
+        const actual = {
+            success: true,
+            payload: decoder("k jkfg c dqz qh iqnf eqkp wpfgt vjg crrng vtgg.")
+        }
+
+        const expected = {
+            success: true,
+            payload: "i hide a box of gold coin under the apple tree."
+        }
+
+        expect(actual).toStrictEqual(expected);
+    })
+
 })
 
 //#endregion
