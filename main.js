@@ -47,13 +47,16 @@ export function matchArrays(arr1, arr2) {
 
                 🎄🎄🔑🎄🎄
 
-        You found someone leave you a secret message, 
-        go and decode the message before you get into trouble.
+        You found someone leave you a secret message. 
+        You discovered that the first few words of the message are "I am now...",
+        so shifting each letter two letters up the alphabet should show what it is written.
+        Go and decode the message before you get into trouble.
         All the letters are in lowercase.
         
                 🎄🎄🎄🎄🎄
 
 */
+const encodedString = "k co pqy kp nc, eqog cpf hkpf og."
 
 export function decoder(encodedString) {
 
