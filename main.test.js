@@ -3,6 +3,9 @@ import {
     getIngredients,
     matchArrays
 } from "./main.js";
+// import decoder from "./main.js";
+// import getIngredients from "./main.js";
+// import matchArrays from "./main.js";
 
 //👉 Write your tests below here:
 

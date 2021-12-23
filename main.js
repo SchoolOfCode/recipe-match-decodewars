@@ -52,12 +52,12 @@ export function matchArrays(arr1, arr2) {
         so shifting each letter two letters up the alphabet should show what it is written.
         Go and decode the message before you get into trouble.
         All the letters are in lowercase.
+
+        const encodedString = "k co pqy kp nc, eqog cpf hkpf og."
         
                 🎄🎄🎄🎄🎄
 
 */
-const encodedString = "k co pqy kp nc, eqog cpf hkpf og."
-
 export function decoder(encodedString) {
 
 
