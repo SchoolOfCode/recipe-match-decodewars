@@ -51,7 +51,7 @@ export function decoder(encodedString) {
 
         } else {
 
-            //Move 2 alphabet ahead 
+            //Shifting each letter 2 letters up in alphabet 
             alphabetASCLL = alphabetASCLL - 2;
             //secret letter a, b  will become y, z 
             //(Never used in the given secret messages)
