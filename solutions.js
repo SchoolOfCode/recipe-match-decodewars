@@ -53,11 +53,13 @@ export function decoder(encodedString) {
 
             //Move 2 alphabet ahead 
             alphabetASCLL = alphabetASCLL - 2;
-            //secret letter a, b  will become y, z
+            //secret letter a, b  will become y, z 
+            //(Never used in the given secret messages)
             if (alphabetASCLL < 97) {
                 alphabetASCLL = alphabetASCLL + 26;
             }
-            //Just in case it is shifting the letters down in alphabet
+            //Just in case it is shifting the letters down in alphabet 
+            //(Never used in the given secret messages)
             if (alphabetASCLL > 122) {
                 alphabetASCLL = alphabetASCLL - 26;
             }
